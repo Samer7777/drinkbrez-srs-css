@@ -66,3 +66,19 @@ vipcopyright {
   border-radius: 5px;
   padding: 8px 16px;
 }
+finder_body {
+    background-color: #000; /* تغيير خلفية الجسم داخل الـ IFrame */
+}
+
+.btn-primary,
+.btn-primary:disabled {
+    background-color: #e3f98a !important;
+    border-color: #e3f98a !important;
+    color: #000000 !important;
+}
+
+.btn-primary:hover,
+.btn-primary:disabled:hover {
+    background-color: #d4f7b8 !important;
+    border-color: #d4f7b8 !important;
+}
