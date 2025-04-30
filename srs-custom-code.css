@@ -2,6 +2,7 @@ finder_body {
   background: linear-gradient(to bottom, #CCEDF6, #EBC7F5);
   font-family: Arial, sans-serif;
   color: #000000;
+  direction: rtl; /* لدعم النص بالعربية */
 }
 
 finder_table {
@@ -25,12 +26,12 @@ finder_row_a, finder_row_b {
 
 finder_dba, finder_address, finder_phone, finder_miles {
   padding: 10px;
-  text-align: left;
+  text-align: right; /* محاذاة النص لليمين للعربية */
 }
 
 finder_miles {
   border: 1px solid #ddd;
-  border-radius: 8px;
+  border-radius: 8px; /* إضافة زوايا مستديرة للمسافة */
 }
 
 finder_map a {
@@ -43,14 +44,14 @@ finder_map a:hover {
 }
 
 #finderMarkerLayer img {
-  width: 24px;
+  width: 24px; /* تقليل حجم الدبوس */
   height: auto;
-  filter: hue-rotate(180deg) saturate(150%) brightness(100%);
+  filter: hue-rotate(180deg) saturate(150%) brightness(100%); /* تقريب اللون إلى #64B7F3 */
 }
 
 finder_tbody {
-  display: block !important;
-  font-size: 0.9em;
+  display: block !important; /* ضمان ظهور نتائج الفلتر عند التحميل */
+  font-size: 0.9em; /* تقليل حجم النتائج المفلترة */
 }
 
 vipcopyright {
@@ -79,9 +80,13 @@ vipcopyright {
 }
 
 finder_headline {
-  text-align: left;
+  text-align: right; /* محاذاة العنوان لليمين */
 }
 
 finder_notes {
-  text-align: left;
+  text-align: left; /* محاذاة الملاحظات الإضافية لليسار */
+}
+
+.form-group.btn-group.float-start {
+  display: none !important; /* إخفاء عناصر الفلتر المرتبطة بـ SVG */
 }
