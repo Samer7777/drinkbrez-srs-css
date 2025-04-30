@@ -1,5 +1,5 @@
 finder_body {
-  background-color: #FFFFFF;
+  background: linear-gradient(to bottom, #CCEDF6, #EBC7F5);
   font-family: Arial, sans-serif;
   color: #000000;
 }
@@ -28,6 +28,11 @@ finder_dba, finder_address, finder_phone, finder_miles {
   text-align: left;
 }
 
+finder_miles {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
 finder_map a {
   color: #800080;
   text-decoration: none;
@@ -38,8 +43,14 @@ finder_map a:hover {
 }
 
 #finderMarkerLayer img {
-  width: 30px;
+  width: 24px;
   height: auto;
+  filter: hue-rotate(180deg) saturate(150%) brightness(100%);
+}
+
+finder_tbody {
+  display: block !important;
+  font-size: 0.9em;
 }
 
 vipcopyright {
@@ -51,34 +62,26 @@ vipcopyright {
 
 .btn-primary,
 .btn-primary:disabled {
-  background-color: #e3f98a !important;
-  border-color: #e3f98a !important;
+  background-color: #E3F98A !important;
+  border-color: #E3F98A !important;
   color: #000000 !important;
 }
 
 .btn-primary:hover,
 .btn-primary:disabled:hover {
-  background-color: #d4f7b8 !important;
-  border-color: #d4f7b8 !important;
+  background-color: #D4F7B8 !important;
+  border-color: #D4F7B8 !important;
 }
 
 .btn {
   border-radius: 5px;
   padding: 8px 16px;
 }
-finder_body {
-    background-color: #000; /* تغيير خلفية الجسم داخل الـ IFrame */
+
+finder_headline {
+  text-align: left;
 }
 
-.btn-primary,
-.btn-primary:disabled {
-    background-color: #e3f98a !important;
-    border-color: #e3f98a !important;
-    color: #000000 !important;
-}
-
-.btn-primary:hover,
-.btn-primary:disabled:hover {
-    background-color: #d4f7b8 !important;
-    border-color: #d4f7b8 !important;
+finder_notes {
+  text-align: left;
 }
